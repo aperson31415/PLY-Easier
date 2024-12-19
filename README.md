@@ -2,6 +2,7 @@
 A tool to make your own programming language  
 This tool is heavily based on [PythonLexYacc](https://ply.readthedocs.io/en/latest/), but easier to use.  
 You need to [download python](https://www.python.org/downloads/) to use this package.  
+After reading this, if you still don't understand, refer to this [example](https://github.com/aperson31415/PLY-Easier/blob/main/example.txt)
 
 ## Tokens.txt
 -Is a list of all objects/functions to be recognised  

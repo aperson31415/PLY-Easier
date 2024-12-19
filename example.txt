@@ -1,0 +1,25 @@
+Tokens.txt
+
+PLUS:[regEx, r'\+']
+NUMBER:[function, '\\d+\nt.value = int(t.value)']
+SAY:[regEx, r'HELLO']
+
+Grammar.txt
+
+NUMBER:[NUMBER, p[0] = p[1]]
+expression PLUS expression:[PLUS, p[0] = p[1] + p[3]]
+SAY expression: [SAY, print(expression)\np[0] = None]
+
+PRECEDENCE.txt
+
+(left, SAY)
+(left, PLUS)
+(left, NUMBER)
+
+OTHER.txt
+ \t
+print('ERROR\n{t}', file=sys.stderr)
+print('ERROR\n{p}', file=sys.stderr)
+lineByLine
+True
+Addition
